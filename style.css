@@ -21,29 +21,49 @@
     height: 600px;
 }
 
-.debug .large_container {
+.debug .large_plan_container {
     height: 600px;
     background-color: aqua;
 }
 
 .debug .plan {
-    height: 1200px;
     background-color: brown;
 }
 
-.debug .container {
-    height: 1200px;
+.debug .plan_container {
     background-color: burlywood;
 }
 
-.debug .column {
+.debug .plan_column {
     height: 800px;
     background-color: coral;
 }
 
-.debug .large_column {
+.debug .large_plan_column {
     height: 200px;
     background-color: cornflowerblue;
+}
+
+.debug .paragraph {
+    height: 430px;
+    background-color: crimson;
+}
+
+.debug .partner {
+    background-color: darkgoldenrod;
+}
+
+.debug .operation {
+    background-color: darkblue;
+}
+
+.debug .operation_container {
+    background-color: darkgreen;
+}
+
+.debug .operation_column {
+    height: 500px;
+    background-color: darkmagenta;
 }
 
 /* utility rules */
@@ -60,35 +80,64 @@
 .m_column {
     margin: 0 5% 50px;
 }
+
+.m_column_2 {
+    margin: 0 5% 50px 0;
+}
+
+.m_bottom {
+    margin-bottom: 50px;
+}
 /*******************
- header rules *****/
+header rules ******/
 
- /******************
-  main rules ******/
+/******************
+main rules *******/
 
- /* hero_image */
+/* hero_image */
 .hero_image	{
     background-color: #B4D0E7;
 }
+
  /* plan */
-.column, .large_column {
+.plan_column, .large_plan_column {
     float: left;
 }
 
-.column {
+.plan_column {
     width: 30%;
 }
 
-.large_column {
+.large_plan_column {
     width: 100%;
 }
- /* partner */
 
- /* operation */
+/* partner */
+ .partner img, .partner .paragraph {
+    float: left;
+    width: 48%;
+}
 
- /* business */
+.partner img {
+    margin-right: 4%;
+}
 
- /* faq */
+/* operation */
+.operation_column {
+    float: left;
+    width: 30%;
+}
 
- /******************
- footer rules *****/
+.operation_column > img {
+    width: 100%;
+}
+
+/* business */
+.companies .company {
+    float: left;
+}
+
+/* faq */
+
+/******************
+footer rules *****/
