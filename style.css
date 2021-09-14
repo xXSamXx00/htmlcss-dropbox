@@ -5,10 +5,61 @@
     padding: 0;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* debug rules */
+.debug > header {
+    height: 60px;
+    background-color: burlywood;
+}
+
+.debug .hero_image {
+    height: 600px;
+}
+
+.debug .large_container {
+    height: 600px;
+    background-color: aqua;
+}
+
+.debug .plan {
+    height: 1200px;
+    background-color: brown;
+}
+
+.debug .container {
+    height: 1200px;
+    background-color: burlywood;
+}
+
+.debug .column {
+    height: 800px;
+    background-color: coral;
+}
+
+.debug .large_column {
+    height: 200px;
+    background-color: cornflowerblue;
+}
 
 /* utility rules */
+.large_container {
+    width: 80%;
+    margin: auto;
+}
 
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.m_column {
+    margin: 0 5% 50px;
+}
 /*******************
  header rules *****/
 
@@ -16,9 +67,21 @@
   main rules ******/
 
  /* hero_image */
-
+.hero_image	{
+    background-color: #B4D0E7;
+}
  /* plan */
+.column, .large_column {
+    float: left;
+}
 
+.column {
+    width: 30%;
+}
+
+.large_column {
+    width: 100%;
+}
  /* partner */
 
  /* operation */
