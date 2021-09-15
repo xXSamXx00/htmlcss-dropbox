@@ -20,27 +20,6 @@ body {
 }
 
 /* debug rules */
-.debug .operation {
-    background-color: darkblue;
-}
-
-.debug .operation_container {
-    background-color: darkgreen;
-}
-
-.debug .operation_column {
-    height: 500px;
-    background-color: darkmagenta;
-}
-
-.debug .content {
-    height: 400px;
-}
-
-.debug .title {
-    height: 200px;
-}
-
 .debug .color {
     background-color: firebrick;
     height: 600px;
@@ -71,7 +50,7 @@ body {
 }
 
 .m_column_2 {
-    margin: 0 5% 50px 0;
+    margin: 0 5% 60px 0;
 }
 
 .m_bottom {
@@ -118,7 +97,11 @@ body {
 }
 
 .partner {
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+.operation {
+    margin-bottom: 100px;
 }
 /*******************
 header rules ******/
@@ -205,7 +188,7 @@ a[href^="#1"] {
 }
 
 /* plan */
-.subtitle {
+.subtitle, .operation h2 {
     font-size: 2.4rem;
     margin-bottom: 55px;
 }
@@ -390,7 +373,29 @@ a[href^="#1"] {
     width: 100%;
 }
 
+.operation_column > h3 {
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.operation_column > p {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
 /* business */
+.business h2 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.container > a {
+    color: #0061FF;
+    font-weight: 600;
+    margin: 30px 0;
+    display: inline-block;
+}
+
 .team_business .companies {
     float: left;
     width: 30%;
@@ -456,9 +461,57 @@ a[href^="#1"] {
     filter: invert(100%) sepia(56%) saturate(0%) hue-rotate(9deg) brightness(115%) contrast(101%);
 }
 
+.content {
+    padding: 50px 55px 110px;
+}
+
+.content > img {
+    width: 25%;
+}
+
+.border-2 {
+    height: 40px;
+    width: 55px;
+    margin-top: 30px;
+    border-top: 1px solid #DFDFE1;
+}
+
+.content > p {
+    margin-bottom: 40px;
+}
+
 .title {
     background-color: #B4D0E7;
 }
+
+.title h2 {
+    color: #61082B;
+
+}
+
+.bring, .trial {
+    float: left;
+    width: 50%;
+}
+
+.trial {
+    text-align: end;
+    margin-top: 110px;
+}
+
+.bring {
+    padding: 110px 0;
+}
+
+.start_free {
+    padding: 6px 65px;
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+}
+
 /* faq */
 
 /******************
