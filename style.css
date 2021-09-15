@@ -20,19 +20,6 @@ body {
 }
 
 /* debug rules */
-.debug .plan {
-    background-color: brown;
-}
-
-.debug .plan_container {
-    background-color: burlywood;
-}
-
-.debug .plan_column {
-    height: 800px;
-    background-color: coral;
-}
-
 .debug .large_plan_column {
     height: 200px;
     background-color: cornflowerblue;
@@ -116,6 +103,10 @@ body {
 .arrow {
     padding: 30px 0 100px;
 }
+
+.hero_image {
+    margin-bottom: 200px;
+}
 /*******************
 header rules ******/
 .menu_left, .menu_right {
@@ -152,10 +143,6 @@ nav a{
 .menu_right > a {
     margin-left: 40px;
 }
-
-.position {
-    position: relative;
-}
 /******************
 main rules *******/
 
@@ -171,7 +158,6 @@ main rules *******/
 }
 
 .hero_image p {
-    width: 35%;
     margin: 40px 0 30px;
     font-weight: 600;
 }
@@ -187,20 +173,107 @@ a[href^="#1"] {
     font-size: 36px;
 }
 
-.position > img {
-    width: 68%;
+.hero_column, .float {
+    float: left;
+}
+
+.float {
+    width: 35%;
+}
+
+.hero_column {
+    position: relative;
+    width: 	65%;
+}
+
+.hero_column > img {
+    width: 102%;
     position: absolute;
-    top: 285px;
-    left: 432px;
+    top: 48px;
+    left: 50px;
 }
 
 /* plan */
+.subtitle {
+    font-size: 2.4rem;
+    margin-bottom: 55px;
+}
+
+.input {
+    display: inline;
+    margin-right: 20px;
+}
+
+.checkmark {
+    display: inline-block;
+    background-color: white;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    vertical-align: sub;
+}
+
+.blue {
+    border: 4px solid #0061FF;
+}
+
+.white {
+    border: 1px solid #E4E4E5;
+}
+
+.row_plan {
+    margin-top: 40px;
+}
+
 .plan_column, .large_plan_column {
     float: left;
 }
 
 .plan_column {
     width: 30%;
+    border: 1px solid #E4E4E5;
+}
+
+.padding_container {
+    padding: 0 20px;
+}
+
+.name {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #E4E4E5;
+}
+
+.option {
+    margin-top: 25px;
+}
+
+.option > h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: 800;
+}
+
+.option > div {
+    color: #707E8B;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.descriptions {
+    margin: 40px 0;
+}
+
+.description {
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.icon, .description {
+    display: inline-block;
 }
 
 .large_plan_column {
@@ -208,7 +281,7 @@ a[href^="#1"] {
 }
 
 /* partner */
- .partner img, .partner .paragraph {
+.partner img, .partner .paragraph {
     float: left;
     width: 48%;
 }
@@ -257,35 +330,35 @@ a[href^="#1"] {
     background-color: #F6F6F6;
 }
 
-.green {
+.designit {
     background-color: #A2D39B;
 }
 
-.brown {
+.arizona {
     background-color: #61082B;
 }
 
-.lightblue {
+.florida {
     background-color: #0093CE;
 }
 
-.red {
+.topps {
     background-color: #FF1C1C;
 }
 
-.darkred {
+.bicycle {
     background-color: #D5001F;
 }
 
-.skyblue {
+.hearst {
     background-color: #B4D0E7;
 }
 
-.blue {
+.lonely {
     background-color: #0D2481;
 }
 
-.yellow {
+.channel {
     background-color: #FFD830;
 }
 
