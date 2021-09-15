@@ -11,12 +11,15 @@
     clear: both;
 }
 
-/* debug rules */
-.debug > header {
-    height: 60px;
-    background-color: burlywood;
+html {
+    scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* debug rules */
 .debug .hero_image {
     height: 600px;
 }
@@ -105,9 +108,50 @@
 .m_bottom {
     margin-bottom: 50px;
 }
+
+.button {
+    padding: 6px 20px;
+    background-color: #0061FF;
+    color: white;
+    font-weight: 400;
+}
+
 /*******************
 header rules ******/
+.menu_left, .menu_right {
+    float: left;
+    width: 50%;
+}
 
+.menu_left {
+    padding: 6px 0 20px 15px;
+}
+
+.menu_right {
+    text-align: end;
+    padding: 8px 15px 25px 0;
+}
+
+#logo {
+    vertical-align: sub;
+    padding: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    padding-bottom: 26px;
+    font-weight: 600;
+}
+
+.menu_left > a {
+    margin-right: 40px;
+    padding-bottom: 24px;
+}
+
+.menu_right > a {
+    margin-left: 40px;
+}
 /******************
 main rules *******/
 
