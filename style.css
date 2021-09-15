@@ -20,15 +20,6 @@ body {
 }
 
 /* debug rules */
-.debug .paragraph {
-    height: 430px;
-    background-color: crimson;
-}
-
-.debug .partner {
-    background-color: darkgoldenrod;
-}
-
 .debug .operation {
     background-color: darkblue;
 }
@@ -123,6 +114,10 @@ body {
 }
 
 .plan {
+    margin-bottom: 50px;
+}
+
+.partner {
     margin-bottom: 50px;
 }
 /*******************
@@ -339,11 +334,11 @@ a[href^="#1"] {
 }
 
 .text_option {
-    width: 77%;
+    width: 71%;
 }
 
 .office {
-    width: 23%;
+    width: 29%;
     margin-top: 20px;
 }
 
@@ -354,11 +349,35 @@ a[href^="#1"] {
 /* partner */
 .partner img, .partner .paragraph {
     float: left;
-    width: 48%;
+}
+
+.partner .paragraph {
+    width: 44%;
 }
 
 .partner img {
-    margin-right: 4%;
+    margin-right: 5%;
+    width: 51%;
+}
+
+.paragraph > h3 {
+    font-size: 26px;
+    margin-top: 50px;
+    font-weight: 800;
+}
+
+.paragraph > p {
+    margin: 25px 0;
+}
+
+.find_partner {
+    padding: 6px 18px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
 }
 
 /* operation */
