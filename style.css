@@ -42,16 +42,7 @@ body {
     margin-bottom: 50px;
 }
 
-.button {
-    padding: 6px 18px;
-    background-color: #0061FF;
-    color: white;
-    font-weight: 400;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.button:hover {
+.menu_right > .button:hover, .float > .button:hover, .button:hover {
     background-color: #3B85FF;
 }
 
@@ -67,7 +58,7 @@ body {
     margin: 40px 0 30px;
 }
 
-.padding_container > a, .office > a {
+.padding_container > .p-botton, .office > .button {
     padding-right: 52px;
     padding-left: 52px;
     font-size: 14px;
@@ -111,9 +102,20 @@ header rules ******/
     padding: 20px 0 24px;
 }
 
+.menu_left li, .menu_right li, .menu_right > ul {
+    display: inline-block;
+}
+
 .menu_right {
     text-align: end;
     padding: 20px 15px 20px 0;
+}
+
+.first_menu > li > a {
+    text-decoration: none;
+    color: black;
+    padding: 25px 20px;
+    font-weight: 600;
 }
 
 #logo {
@@ -123,36 +125,76 @@ header rules ******/
     background-color: white;
 }
 
-nav a{
-    text-decoration: none;
-    color: black;
-    padding: 26px 20px;
-    font-weight: 600;
-}
-
 .menu_right > .button {
     border-bottom: none;
+    margin-left: 20px;
 }
 
-nav a:hover {
+.menu_left a:hover, .first_menu > li > a:hover {
     border-bottom: 1px solid black;
     background-color: #F2EEE8;
 }
 
-.menu_left > a {
-    padding: 28px 20px;
+.menu_left a {
+    padding: 27px 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
 }
 
-.support {
-    position: relative;
+.menu_right > .button, .float > .button, .padding_container > a, .office > a {
+    padding: 6px 18px;
+    background-color: #0061FF;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
     display: inline-block;
 }
 
+.menu_right > ul > li {
+    display: inline-block;
+}
+
+.menu_right > ul > li:first-child {
+    position: relative;
+}
+
 #little_menu {
-    display: block;
     position: absolute;
-    bottom: 0;
-    left: 0;
+    left: -125px;
+    bottom: -106px;
+    font-size: 14px;
+    width: 212%;
+    text-align: left;
+    background-color: #F2EEE8;
+    padding: 10px 0;
+    display: none;
+}
+
+#little_menu > li{
+    width: 100%;
+    line-height: 30px;
+}
+
+#little_menu a {
+    text-decoration: none;
+    color: black;
+}
+
+#little_menu > li:first-child a {
+    padding: 5px 101px 6px 12px;
+}
+
+#little_menu > li:last-child a {
+    padding: 5px 69px 6px 12px;
+}
+
+.first_menu > li:first-child:hover #little_menu {
+    display: block;
+}
+
+#little_menu li:hover {
+    background-color: #E7E0D7;
 }
 
 /******************
@@ -572,6 +614,7 @@ a[href^="#1"] {
 .block > p {
     margin-top: 10px;
     display: none;
+    width: 71%;
 }
 
 .block {
