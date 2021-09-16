@@ -143,6 +143,18 @@ nav a:hover {
     padding: 28px 20px;
 }
 
+.support {
+    position: relative;
+    display: inline-block;
+}
+
+#little_menu {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 /******************
 main rules *******/
 
@@ -548,10 +560,6 @@ a[href^="#1"] {
     font-size: 22px;
 }
 
-.open::before {
-    font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f107";
-}
-
 .question {
     padding: 30px 0;
     border-top: 1px solid #E2E2E3;
@@ -574,8 +582,16 @@ a[href^="#1"] {
     display: block;
 }
 
-.block:hover .open {
-    font-family: "Font Awesome 5 Free"; font-weight: 400; content: "\f106";
+.block:hover i:first-child {
+    display: none;
+}
+
+.open i:last-child {
+    display: none;
+}
+
+.block:hover i:last-child {
+    display: block;
 }
 
 /******************
